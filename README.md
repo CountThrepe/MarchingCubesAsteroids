@@ -3,6 +3,7 @@
 This application procedurally generates asteroids using OpenGL. I have designed and coded my own implementation of the marching cubes algorithm, which I used together with Open Simplex Noise to generate random 3d meshes and continuous 3d textures.
 
 Examples:
+
 ![](examples/asteroid1.gif)
 ![](examples/asteroid2.gif)
 
