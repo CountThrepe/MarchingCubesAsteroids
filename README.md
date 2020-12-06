@@ -1,10 +1,10 @@
-Final Project Review
-Nathan Howard
-Nathan.Howard@colorado.edu
-
 -----Overview-----
 
-My focus has changed since the project proposal. I was originally planning on making a 3d version of the classic arcade game asteroids, but I decided that would be a lot of work for not greatly demonstrating my knowledge of the topics of this class. Instead, I decided to focus in on procedurally generating asteroids. I have designed and coded my own implementation of the marching cubes algorithm, which I used together with Open Simplex Noise to generate random 3d meshes and continuous 3d textures.
+This application procedurally generates asteroids using OpenGL. I have designed and coded my own implementation of the marching cubes algorithm, which I used together with Open Simplex Noise to generate random 3d meshes and continuous 3d textures.
+
+Examples:
+![](examples/asteroid1.gif)
+![](examples/asteroid2.gif)
 
 Controls:
 
@@ -28,11 +28,6 @@ Controls:
 
 Notes:
 I disabled the changing offset for the higher dimensions as generating meshes at high dimensions takes a long time and can cause the program to be unresponsive. In general be aware that the higher dimensions can take a long time to generate a mesh, and a new mesh is generated everytime any of the parameters are changed.
-
-Updates:
-I added procedural 3d textures made from layered Open Simplex Noise to the asteroids. I was originally planning on implementing this with a shader, but after more research I found that OpenGL has support for 3D textures. I opted for the simpler route and wrote a class to create layered noise, then load that 3D texture into OpenGL. I had some issues with my OpenSimplexNoise class, so I didn't have as much time as I would have liked to mess around with the parameters of the layered noise to create different artistic looks, but I settled on a basic set of parameters.
-I also added a skybox to make the environement more visually interesting.
-I don't have any compile errors on my system (Windows 10, MinGW), so I wasn't able to debug the compile errors you had. If there are still compile errors, reach out to me with details, and I will try to fix them.
 
 
 -----Details-----

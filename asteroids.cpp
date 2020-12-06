@@ -289,12 +289,12 @@ int main(int argc, char* argv[]) {
     glLightfv(GL_LIGHT0, GL_DIFFUSE, diffArr);
     glLightfv(GL_LIGHT0, GL_SPECULAR, specArr);
 
-    skyboxTextures[0] = LoadTexBMP("skyboxBottom.bmp");
-    skyboxTextures[1] = LoadTexBMP("skyboxTop.bmp");
-    skyboxTextures[2] = LoadTexBMP("skyboxFront.bmp");
-    skyboxTextures[3] = LoadTexBMP("skyboxRight.bmp");
-    skyboxTextures[4] = LoadTexBMP("skyboxBack.bmp");
-    skyboxTextures[5] = LoadTexBMP("skyboxLeft.bmp");
+    skyboxTextures[0] = LoadTexBMP("textures/skyboxBottom.bmp");
+    skyboxTextures[1] = LoadTexBMP("textures/skyboxTop.bmp");
+    skyboxTextures[2] = LoadTexBMP("textures/skyboxFront.bmp");
+    skyboxTextures[3] = LoadTexBMP("textures/skyboxRight.bmp");
+    skyboxTextures[4] = LoadTexBMP("textures/skyboxBack.bmp");
+    skyboxTextures[5] = LoadTexBMP("textures/skyboxLeft.bmp");
 
     initScene();
 
